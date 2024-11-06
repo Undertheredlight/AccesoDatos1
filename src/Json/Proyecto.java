@@ -1,4 +1,4 @@
-//creamos un participantes y un proyecto de usuarioAvanzado
+//El proyecto tendrá un nombre y participantes (que son los jugadores (usuarioAvanzado)
 package Json;
 
 
@@ -12,6 +12,11 @@ public class Proyecto {
 
     private String nombre;
     private ArrayList<UsuarioAvanzado> participantes;
+
+    public Proyecto(String nombre) {
+        this.nombre = nombre;
+        this.participantes = new ArrayList<UsuarioAvanzado>();
+    }
 
     public String getNombre() {
         return nombre;
@@ -27,11 +32,6 @@ public class Proyecto {
 
     public void setParticipantes(ArrayList<UsuarioAvanzado> participantes) {
         this.participantes = participantes;
-    }
-
-    public Proyecto(String nombre) {
-        this.nombre = nombre;
-        this.participantes = new ArrayList<UsuarioAvanzado>();
     }
 
     //este método delegado añade un usuario al arraylist

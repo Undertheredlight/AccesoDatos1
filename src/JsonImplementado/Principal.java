@@ -37,7 +37,7 @@ public class Principal {
         JsonProyecto.put("participantes", jsonParticipantes);
 
         try {
-            java.nio.file.Files.write(java.nio.file.Paths.get("proyecto.json"), JsonProyecto.toString().getBytes());
+            java.nio.file.Files.write(java.nio.file.Paths.get("nuevo.json"), JsonProyecto.toString().getBytes());
         } catch (java.io.IOException e) {
             e.printStackTrace();
         }

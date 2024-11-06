@@ -16,7 +16,7 @@ public class Principal {
     public static void main(String[] args) {
         try {
             //Leer el contenido desde un archivo JSON
-            String contenido = new String(Files.readAllBytes(Paths.get("starwars.json")));
+            String contenido = new String(Files.readAllBytes(Paths.get("starwars.json"))); //el documento ya esxiste 
 
             //Crea un objeto JSONObject a partir de una cadena de texto que representa un objeto JSON.
             JSONObject jsonLeido = new JSONObject(contenido);
@@ -57,7 +57,7 @@ public class Principal {
                         + ",\n Opening_crawl:" + pelicula.getOpening_crawl()
                         + ",\n Director: " + pelicula.getDirector() + "\n");
             }
-
+            
             //Procesamos especies recorriendo
             for (int i = 0; i < jsonEspecieLeidas.length(); i++) {
                 JSONObject jsonEspecie = jsonEspecieLeidas.getJSONObject(i);

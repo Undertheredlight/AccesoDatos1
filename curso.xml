@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<empleados>
+<bebe>
     <empleado Id="10">
         <nombre>Marc</nombre>
         <apellido>Zuckerbeg</apellido>
@@ -10,4 +10,4 @@
         <apellido>Contreras</apellido>
         <ciudad>Caracas</ciudad>
     </empleado>
-</empleados>
+</bebe>

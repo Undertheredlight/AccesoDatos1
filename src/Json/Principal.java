@@ -37,7 +37,7 @@ public class Principal {
             e.printStackTrace();
         }
 
-        //TERMINAMOS ESCRITURA Y EN OTRA CLASE VAMOS A LEER
+        //TERMINAMOS ESCRITURA DEL JSON. AHORA VAMOS A VISUALIZAR Y LEERLO POR CONSOLA 
         try {
             //Leer el contenido desde un archivo JSON
             String contenido = new String(java.nio.file.Files.readAllBytes(java.nio.file.Paths.get("proyecto.json")));
